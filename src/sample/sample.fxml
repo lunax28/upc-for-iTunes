@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="349.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UpcController">
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="SOURCE">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#selectOnClick" text="Select">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <TextField fx:id="sourceTextField" editable="false" prefHeight="27.0" prefWidth="378.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#doOnClick" text="DO">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="150.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TextArea fx:id="textArea" prefHeight="296.0" prefWidth="551.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" right="5.0" top="22.0" />
+         </BorderPane.margin></TextArea>
+   </center>
+   <left>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="UPC:" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="284.0" prefWidth="136.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
